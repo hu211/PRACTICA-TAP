@@ -2,68 +2,61 @@ from agents.minecraft_agent import MinecraftAgent
 import random
 import time
 import sys
+from functools import partial
 
 class InsultBot(MinecraftAgent):
     def __init__(self):
-        super().__init__()  # Llamamos al constructor de MinecraftAgent
-        self.insulting = False  # Variable para controlar el estado de la acción
+        super().__init__()
+        self.insulting = False
+        self.commands = {
+            "start": self.start_insulting,
+            "stop": self.stop_insulting
+        }
 
     def insult(self):
-        """Genera un insulto aleatorio y lo envía al chat"""
+        """Genera un insulto aleatorio y lo envía al chat (función pura)."""
         insults = ["loser", "jerk", "noob", "dork", "dummy", "nerd"]
-        insult = random.choice(insults)
-        self.post_to_chat(insult)
+        return random.choice(insults)
 
     def start_insulting(self, interval=5):
-        """Inicia la acción de insultar a los jugadores en el chat"""
+        """Inicia la acción de insultar a los jugadores en el chat."""
         self.insulting = True
         self.post_to_chat("¡Empezando a insultar!")
         while self.insulting:
             players = self.mc.getPlayerEntityIds()
-            for player in players:
-                self.move_to_player(player)
-                self.insult()
-                self.wait(interval)
-            # Escucha el chat cada vez que el bot insulta
-            self.listen_for_stop()
+            list(map(self.insult_player, players))  # Uso de map() funcional
+            time.sleep(interval)
+            self.listen_for_commands()
 
-    def stop_insulting(self):
-        """Detiene la acción de insultar"""
-        self.insulting = False
-        self.post_to_chat("¡He dejado de insultar!")
-        sys.exit()  # Salir del programa
-
-    def listen_for_stop(self):
-        """Escuchar si alguien escribe 'stop' para parar el bot"""
-        chat_posts = self.mc.events.pollChatPosts()
-        for post in chat_posts:
-            message = post.message.strip().lower()
-
-            if message == "stop":
-                self.stop_insulting()  # Detener la acción de insultar
-                return  # Salir del bucle de escucha
-
-    def interactive_chat(self):
-        """Escuchar los mensajes del chat para los comandos 'start' y 'stop'"""
-        self.post_to_chat("Para empezar a insultar, escribe 'start'. Para parar, escribe 'stop'.")
-
-        while True:
-            chat_posts = self.mc.events.pollChatPosts()
-            for post in chat_posts:
-                message = post.message.strip().lower()
-
-                if message == "start" and not self.insulting:
-                    self.start_insulting()  # Comienza a insultar
-                elif message == "stop" and self.insulting:
-                    self.stop_insulting()  # Detiene el insulto
-                else:
-                    self.post_to_chat("No entiendo lo que quieres decir. Usa 'start' para comenzar y 'stop' para parar.")
-                    self.wait(5)
-
-    def move_to_player(self, player_id):
-        """Mover el agente hacia un jugador"""
+    def insult_player(self, player_id):
+        """Insulta a un jugador moviéndose hacia él."""
         pos = self.mc.entity.getTilePos(player_id)
         self.move(pos.x, pos.y, pos.z)
+        self.post_to_chat(self.insult())
+
+    def stop_insulting(self):
+        """Detiene la acción de insultar."""
+        self.insulting = False
+        self.post_to_chat("¡He dejado de insultar!")
+        sys.exit()
+
+    def listen_for_commands(self):
+        """Escucha los comandos en el chat usando reflexión."""
+        chat_posts = self.mc.events.pollChatPosts()
+        commands = filter(lambda post: post.message.strip().lower() in self.commands, chat_posts)
+        for post in commands:
+            command = post.message.strip().lower()
+            getattr(self, f"{command}_insulting")()  # Reflexión: ejecuta el método dinámicamente
+
+    def interactive_chat(self):
+        """Escucha mensajes y ejecuta comandos dinámicamente."""
+        self.post_to_chat("Para empezar, escribe 'start'. Para parar, escribe 'stop'.")
+        while True:
+            chat_posts = self.mc.events.pollChatPosts()
+            valid_posts = filter(lambda post: post.message.strip().lower() in self.commands, chat_posts)
+            for post in valid_posts:
+                command = post.message.strip().lower()
+                self.commands[command]()  # Ejecuta el comando dinámicamente
 
 if __name__ == "__main__":
     insult_bot = InsultBot()

@@ -4,40 +4,48 @@ import time
 class OracleBot(MinecraftAgent):
     def __init__(self):
         super().__init__()
-        self.answering = False  # Flag to control answering loop
+        self.commands = {
+            "iniciar": self.start_answering,
+            "detener": self.stop_answering
+        }
+        self.responses = {
+            "tiempo": lambda: "El tiempo está soleado.",
+            "nombre": lambda: "Mi nombre es OracleBot.",
+            "creador": lambda: "Fui creado por el profesor.",
+            "propósito": lambda: "Mi propósito es responder a tus preguntas."
+        }
 
     def command_iniciar_oraculo(self):
-        """Start the OracleBot and greet players."""
-        self.post_to_chat("¡Hola! Soy el oráculo. ¿Qué quieres saber?")
+        """Iniciar el oráculo."""
+        self.post_to_chat("¡Hola! Soy el oráculo. Pregunta sobre 'tiempo', 'nombre', 'creador' o 'propósito'.")
         self.start_answering()
 
     def start_answering(self):
-        """Respond to player questions in the chat."""
-        self.answering = True
-        while self.answering:
+        """Responder preguntas en el chat usando programación funcional y reflexión."""
+        while True:
             chat_posts = self.mc.events.pollChatPosts()
-            for post in chat_posts:
-                question = post.message.strip().lower()
-                answer = self.get_answer(question)
-                self.post_to_chat(answer)
-            time.sleep(1)  # Avoid busy-waiting
+            questions = map(lambda post: post.message.strip().lower(), chat_posts)
+            valid_questions = filter(lambda q: q in self.responses, questions)
+
+            for question in valid_questions:
+                self.post_to_chat(self.responses[question]())  # Reflexión: ejecuta la función de respuesta
+
+            self.listen_for_commands()
+            time.sleep(1)
 
     def stop_answering(self):
-        """Stop the answering loop."""
-        self.answering = False
+        """Detener el bot."""
+        self.post_to_chat("¡Oráculo apagado!")
+        exit()
 
-    def get_answer(self, question):
-        """Generate an answer based on the player's question."""
-        if "tiempo" in question:
-            return "El tiempo está soleado."
-        elif "nombre" in question:
-            return "Mi nombre es OracleBot."
-        elif "creador" in question:
-            return "Fui creado por el profesor."
-        elif "propósito" in question:
-            return "Mi propósito es responder a tus preguntas."
-        else:
-            return "No entiendo tu pregunta. Prueba con 'tiempo', 'nombre', 'creador' o 'propósito'."
+    def listen_for_commands(self):
+        """Escuchar comandos en el chat usando reflexión."""
+        chat_posts = self.mc.events.pollChatPosts()
+        commands = filter(lambda post: post.message.strip().lower() in self.commands, chat_posts)
+
+        for post in commands:
+            command = post.message.strip().lower()
+            getattr(self, f"{command}_answering")()  # Reflexión: ejecuta el comando dinámicamente
 
 if __name__ == "__main__":
     oracle_bot = OracleBot()
