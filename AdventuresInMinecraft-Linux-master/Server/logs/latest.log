@@ -1,0 +1,288 @@
+[15:57:27] [Server thread/INFO]: Starting minecraft server version 1.12
+[15:57:27] [Server thread/INFO]: Loading properties
+[15:57:27] [Server thread/INFO]: Default game type: CREATIVE
+[15:57:27] [Server thread/INFO]: Generating keypair
+[15:57:27] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:57:27] [Server thread/INFO]: Using default channel type
+[15:57:27] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-ed8c725 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)
+[15:57:27] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.10
+[15:57:27] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[15:57:27] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[15:57:27] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[15:57:27] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[15:57:27] [Server thread/INFO]: Preparing level "world"
+[15:57:27] [Server thread/INFO]: Preparing start region for level 0 (Seed: 3056427841534640155)
+[15:57:28] [Server thread/INFO]: Preparing start region for level 1 (Seed: 3056427841534640155)
+[15:57:28] [Server thread/INFO]: Preparing start region for level 2 (Seed: 3056427841534640155)
+[15:57:28] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.10
+[15:57:28] [Server thread/INFO]: [RaspberryJuice] Using port 4711
+[15:57:28] [Server thread/INFO]: [RaspberryJuice] Using ABSOLUTE locations
+[15:57:28] [Server thread/INFO]: [RaspberryJuice] Using BOTH clicks for hits
+[15:57:28] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
+[15:57:28] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[15:57:28] [Server thread/INFO]: Done (1,322s)! For help, type "help" or "?"
+[15:57:44] [Server thread/INFO]: hu11[/127.0.0.1:60637] logged in with entity id 51 at ([world]-1133.8325559959108, 67.0, 680.3331617744966)
+[16:31:58] [Thread-6/INFO]: [RaspberryJuice] Starting input thread
+[16:31:58] [Thread-4/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60774.
+[16:31:58] [Thread-7/INFO]: [RaspberryJuice] Starting output thread!
+[16:31:58] [Server thread/INFO]: ¡Hola! Agente conectado al servidor.[m
+
+[16:31:58] [Server thread/INFO]: ¡Hola! Soy el bot de insultos. ¿Quieres que empiece a insultar?[m
+
+[16:31:58] [Server thread/INFO]: Para empezar a insultar, escribe 'start'. Para parar, escribe 'stop'.[m
+
+[16:32:13] [Netty Server IO #2/INFO]: <hu11> start[m
+
+[16:32:13] [Server thread/INFO]: ¡Empezando a insultar![m
+
+[16:32:13] [Server thread/INFO]: dork[m
+
+[16:32:18] [Server thread/INFO]: jerk[m
+
+[16:32:21] [Netty Server IO #2/INFO]: <hu11> stop[m
+
+[16:32:23] [Server thread/INFO]: noob[m
+
+[16:32:28] [Server thread/INFO]: dork[m
+
+[16:32:33] [Server thread/INFO]: dork[m
+
+[16:32:38] [Server thread/INFO]: dork[m
+
+[16:32:41] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60774.
+[16:34:36] [Thread-8/INFO]: [RaspberryJuice] Starting input thread
+[16:34:36] [Thread-9/INFO]: [RaspberryJuice] Starting output thread!
+[16:34:36] [Thread-4/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60779.
+[16:34:36] [Server thread/INFO]: ¡Hola! Agente conectado al servidor.[m
+
+[16:34:36] [Server thread/INFO]: ¡Hola! Soy el bot de insultos. ¿Quieres que empiece a insultar?[m
+
+[16:34:36] [Server thread/INFO]: Para empezar a insultar, escribe 'start'. Para parar, escribe 'stop'.[m
+
+[16:34:46] [Netty Server IO #2/INFO]: <hu11> START[m
+
+[16:34:46] [Server thread/INFO]: ¡Empezando a insultar![m
+
+[16:34:46] [Server thread/INFO]: noob[m
+
+[16:34:51] [Server thread/INFO]: loser[m
+
+[16:34:56] [Server thread/INFO]: loser[m
+
+[16:34:57] [Netty Server IO #2/INFO]: <hu11> stop[m
+
+[16:35:01] [Server thread/INFO]: dork[m
+
+[16:35:06] [Server thread/INFO]: jerk[m
+
+[16:35:08] [Netty Server IO #2/INFO]: <hu11> STOP[m
+
+[16:35:11] [Server thread/INFO]: dummy[m
+
+[16:35:16] [Server thread/INFO]: noob[m
+
+[16:35:22] [Server thread/INFO]: loser[m
+
+[16:35:27] [Server thread/INFO]: dummy[m
+
+[16:35:32] [Server thread/INFO]: dummy[m
+
+[16:35:36] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60779.
+[16:35:50] [Thread-11/INFO]: [RaspberryJuice] Starting output thread!
+[16:35:50] [Thread-10/INFO]: [RaspberryJuice] Starting input thread
+[16:35:50] [Thread-4/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60782.
+[16:35:51] [Server thread/INFO]: ¡Hola! Agente conectado al servidor.[m
+
+[16:35:51] [Server thread/INFO]: ¡Hola! Soy el bot de insultos. ¿Quieres que empiece a insultar?[m
+
+[16:35:51] [Server thread/INFO]: Para empezar a insultar, escribe 'start'. Para parar, escribe 'stop'.[m
+
+[16:35:58] [Netty Server IO #2/INFO]: <hu11> stop[m
+
+[16:35:58] [Server thread/INFO]: No entiendo lo que quieres decir. Usa 'start' para comenzar y 'stop' para parar.[m
+
+[17:04:00] [Server thread/WARN]: Time ran backwards! Did the system time change?
+[17:31:04] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60782.
+[17:31:11] [Thread-4/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60937.
+[17:31:11] [Thread-13/INFO]: [RaspberryJuice] Starting output thread!
+[17:31:11] [Thread-12/INFO]: [RaspberryJuice] Starting input thread
+[17:31:11] [Server thread/INFO]: ¡Hola! Agente conectado al servidor.[m
+
+[17:31:11] [Server thread/INFO]: ¡Hola! Soy el bot de insultos. ¿Quieres que empiece a insultar?[m
+
+[17:31:11] [Server thread/INFO]: Para empezar a insultar, escribe 'start'. Para parar, escribe 'stop'.[m
+
+[17:31:17] [Netty Server IO #2/INFO]: <hu11> start[m
+
+[17:31:17] [Server thread/INFO]: ¡Empezando a insultar![m
+
+[17:31:17] [Server thread/INFO]: loser[m
+
+[17:31:23] [Server thread/INFO]: dummy[m
+
+[17:31:23] [Netty Server IO #2/INFO]: <hu11> stop[m
+
+[17:31:28] [Server thread/INFO]: ¡He dejado de insultar![m
+
+[17:33:32] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60937.
+[17:33:35] [Thread-4/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60948.
+[17:33:35] [Thread-14/INFO]: [RaspberryJuice] Starting input thread
+[17:33:35] [Thread-15/INFO]: [RaspberryJuice] Starting output thread!
+[17:33:35] [Server thread/INFO]: ¡Hola! Agente conectado al servidor.[m
+
+[17:33:35] [Server thread/INFO]: ¡Hola! Soy el bot de insultos. ¿Quieres que empiece a insultar?[m
+
+[17:33:35] [Server thread/INFO]: Para empezar a insultar, escribe 'start'. Para parar, escribe 'stop'.[m
+
+[17:33:43] [Netty Server IO #2/INFO]: <hu11> stop[m
+
+[17:33:43] [Server thread/INFO]: No entiendo lo que quieres decir. Usa 'start' para comenzar y 'stop' para parar.[m
+
+[17:33:47] [Netty Server IO #2/INFO]: <hu11> start[m
+
+[17:33:48] [Server thread/INFO]: ¡Empezando a insultar![m
+
+[17:33:48] [Server thread/INFO]: dork[m
+
+[17:33:53] [Server thread/INFO]: dork[m
+
+[17:33:54] [Netty Server IO #2/INFO]: <hu11> stop[m
+
+[17:33:58] [Server thread/INFO]: ¡He dejado de insultar![m
+
+[17:34:45] [Thread-4/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60954.
+[17:34:45] [Thread-16/INFO]: [RaspberryJuice] Starting input thread
+[17:34:45] [Thread-17/INFO]: [RaspberryJuice] Starting output thread!
+[17:34:45] [Server thread/INFO]: ¡Hola! Agente conectado al servidor.[m
+
+[17:34:45] [Server thread/INFO]: ¡Hola! Soy el bot de insultos. ¿Quieres que empiece a insultar?[m
+
+[17:34:45] [Server thread/INFO]: Para empezar a insultar, escribe 'start'. Para parar, escribe 'stop'.[m
+
+[17:34:50] [Netty Server IO #2/INFO]: <hu11> START[m
+
+[17:34:50] [Server thread/INFO]: ¡Empezando a insultar![m
+
+[17:34:50] [Server thread/INFO]: loser[m
+
+[17:34:55] [Server thread/INFO]: noob[m
+
+[17:34:59] [Netty Server IO #2/INFO]: <hu11> stop[m
+
+[17:35:00] [Server thread/INFO]: ¡He dejado de insultar![m
+
+[17:35:24] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60954.
+[17:35:26] [Thread-4/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60958.
+[17:35:26] [Thread-18/INFO]: [RaspberryJuice] Starting input thread
+[17:35:26] [Thread-19/INFO]: [RaspberryJuice] Starting output thread!
+[17:35:26] [Server thread/INFO]: ¡Hola! Agente conectado al servidor.[m
+
+[17:35:26] [Server thread/INFO]: ¡Hola! Soy el bot de insultos. ¿Quieres que empiece a insultar?[m
+
+[17:35:26] [Server thread/INFO]: Para empezar a insultar, escribe 'start'. Para parar, escribe 'stop'.[m
+
+[17:35:32] [Netty Server IO #2/INFO]: <hu11> START[m
+
+[17:35:32] [Server thread/INFO]: ¡Empezando a insultar![m
+
+[17:35:32] [Server thread/INFO]: dork[m
+
+[17:35:35] [Netty Server IO #2/INFO]: <hu11> stop[m
+
+[17:35:38] [Server thread/INFO]: ¡He dejado de insultar![m
+
+[17:37:29] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60958.
+[17:37:31] [Thread-4/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60978.
+[17:37:31] [Thread-20/INFO]: [RaspberryJuice] Starting input thread
+[17:37:31] [Thread-21/INFO]: [RaspberryJuice] Starting output thread!
+[17:37:31] [Server thread/INFO]: ¡Hola! Agente conectado al servidor.[m
+
+[17:37:31] [Server thread/INFO]: ¡Hola! Soy el bot de insultos. ¿Quieres que empiece a insultar?[m
+
+[17:37:31] [Server thread/INFO]: Para empezar a insultar, escribe 'start'. Para parar, escribe 'stop'.[m
+
+[17:37:41] [Netty Server IO #2/INFO]: <hu11> START[m
+
+[17:37:42] [Server thread/INFO]: ¡Empezando a insultar![m
+
+[17:37:42] [Server thread/INFO]: loser[m
+
+[17:37:48] [Server thread/INFO]: jerk[m
+
+[17:37:53] [Server thread/INFO]: nerd[m
+
+[17:37:57] [Netty Server IO #2/INFO]: <hu11> stop[m
+
+[17:37:58] [Server thread/INFO]: nerd[m
+
+[17:38:03] [Server thread/INFO]: dork[m
+
+[17:38:06] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60978.
+[17:38:56] [Thread-4/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60984.
+[17:38:56] [Thread-23/INFO]: [RaspberryJuice] Starting output thread!
+[17:38:56] [Thread-22/INFO]: [RaspberryJuice] Starting input thread
+[17:39:17] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60984.
+[17:39:23] [Netty Server IO #2/INFO]: <hu11> stop[m
+
+[17:40:51] [Thread-4/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60991.
+[17:40:51] [Thread-25/INFO]: [RaspberryJuice] Starting output thread!
+[17:40:51] [Thread-24/INFO]: [RaspberryJuice] Starting input thread
+[17:40:51] [Server thread/INFO]: ¡Hola! Agente conectado al servidor.[m
+
+[17:40:51] [Server thread/INFO]: ¡Hola! Soy el oráculo. ¿Qué quieres saber?[m
+
+[17:41:05] [Netty Server IO #2/INFO]: <hu11> que tiempo hace hoy?[m
+
+[17:41:06] [Server thread/INFO]: El tiempo está soleado.[m
+
+[17:41:17] [Netty Server IO #2/INFO]: <hu11> stop[m
+
+[17:41:18] [Server thread/INFO]: No entiendo tu pregunta. Prueba con 'tiempo', 'nombre', 'creador' o 'propósito'.[m
+
+[17:41:26] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60991.
+[17:45:21] [Thread-27/INFO]: [RaspberryJuice] Starting output thread!
+[17:45:21] [Thread-26/INFO]: [RaspberryJuice] Starting input thread
+[17:45:21] [Thread-4/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:61016.
+[17:45:46] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:61016.
+[17:49:29] [Thread-28/INFO]: [RaspberryJuice] Starting input thread
+[17:49:29] [Thread-29/INFO]: [RaspberryJuice] Starting output thread!
+[17:49:29] [Thread-4/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:61034.
+[17:49:29] [Server thread/INFO]: ¡Hola! Agente conectado al servidor.[m
+
+[17:49:29] [Server thread/INFO]: ¡Hola! Soy el bot de insultos. ¿Quieres que empiece a insultar?[m
+
+[17:49:29] [Server thread/INFO]: Para empezar a insultar, escribe 'start'. Para parar, escribe 'stop'.[m
+
+[17:49:36] [Netty Server IO #2/INFO]: <hu11> start[m
+
+[17:49:36] [Server thread/INFO]: ¡Empezando a insultar![m
+
+[17:49:36] [Server thread/INFO]: nerd[m
+
+[17:49:41] [Server thread/INFO]: noob[m
+
+[17:49:43] [Netty Server IO #2/INFO]: <hu11> stop[m
+
+[17:49:46] [Server thread/INFO]: ¡He dejado de insultar![m
+
+[17:50:35] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:61034.
+[17:50:36] [Thread-4/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:61041.
+[17:50:36] [Thread-31/INFO]: [RaspberryJuice] Starting output thread!
+[17:50:36] [Thread-30/INFO]: [RaspberryJuice] Starting input thread
+[17:50:36] [Server thread/INFO]: ¡Hola! Agente conectado al servidor.[m
+
+[17:50:36] [Server thread/INFO]: ¡Hola! Soy el bot de insultos. ¿Quieres que empiece a insultar?[m
+
+[17:50:36] [Server thread/INFO]: Para empezar a insultar, escribe 'start'. Para parar, escribe 'stop'.[m
+
+[17:50:51] [Netty Server IO #2/INFO]: <hu11> start[m
+
+[17:50:51] [Server thread/INFO]: ¡Empezando a insultar![m
+
+[17:50:51] [Server thread/INFO]: nerd[m
+
+[17:50:55] [Netty Server IO #2/INFO]: <hu11> stop[m
+
+[17:50:56] [Server thread/INFO]: ¡He dejado de insultar![m
+
+[17:50:57] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:61041.
