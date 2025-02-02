@@ -56,3 +56,6 @@ L'OracleBot escolta els missatges enviats al xat del jugadir i respon preguntes 
   - La reflexió s'aplica utilitzant *gettattr(self, "command_" + ordre, None) per cridar funcions dinàmiques segons les comandes del jugadors. Això evita la necessitat de condicions explícites i fa el codi més extensible i adaptable a nous tipus de comandes.
 -----
 Aquest projecte combina la potència de la programació funcional i reflexiva amb la creativitat per construir bots intel·ligents que poden interactúar amb el món de Minecraft de manera autònoma i dinàmica. Amb aquesta estructura, els bots poden adaptar-se fàcilmente a noves comandes i escenaris sense necessitat de modificacions complicades en el codi.
+
+----
+[![codecov](https://codecov.io/gh/hu211/PRACTICA-TAP/branch/main/graph/badge.svg)](https://codecov.io/gh/hu211/PRACTICA-TAP)
